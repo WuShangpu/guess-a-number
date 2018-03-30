@@ -3,19 +3,18 @@
 import random
 import time
 import pygame
-from functions import *
-
-num = random.randint(1,101)
-print(num)
-
-print('Let\'s begin the game!')
-time.sleep(1)
+import functions as f
+from setting import Setting
 
 
-begin =True
+def run_game():
+	gn_settings = Setting()
+	print('Let\'s begin the game!')
+	time.sleep(1)
+	while begin:
+		f.guess()
+		print('Do you want to play agian?')
+		
 
-while begin:
-	guess()
-	
-	print('Do you want to play agian?')
+run_game()
 

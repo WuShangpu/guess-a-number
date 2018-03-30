@@ -3,7 +3,7 @@
 
 
 def guess():
-	switch = True
+	
 	while switch:
 		ans = int(input('Please input a number:'))
 		if ans > num:
